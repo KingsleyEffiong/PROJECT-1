@@ -1,7 +1,6 @@
 
 
 'use strict'; 
-
 let  score = 20;
 const btnClick = document.querySelector(".check");
 let secretNumber = Math.trunc(Math.random()*20) +1; 
@@ -31,7 +30,7 @@ btnClick.addEventListener("click", function(){
     }else if(guess!== secretNumber){
         if(score > 1){
             // document.querySelector(".message").textContent =guess > secretNumber ? 'Guess is Higher than secret number; ': 'Guess is less than secret number';
-            displayMessage(guess > secretNumber ? 'Guess is Higher than secret number; ': 'Guess is less than secret number');
+            displayMessage(guess > secretNumber ? '🤷‍♀️Guess is Higher than secret number; ': '🤦‍♂️Guess is less than secret number');
             score--;
             document.querySelector(".score").textContent = score; 
         }else{
